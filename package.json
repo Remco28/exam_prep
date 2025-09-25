@@ -1,0 +1,15 @@
+{
+  "name": "exam_prep",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "build:exam": "node tools/compile_exam.mjs designing_tests/exam-sample",
+    "validate:exam": "node tools/validate_exam.mjs designing_tests/example.exam.json",
+    "validate:compiled": "node tools/validate_exam.mjs designing_tests/exam-sample/compiled.exam.json"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

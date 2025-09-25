@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/attempt.schema.json",
+  "title": "Exam Attempt",
+  "type": "object",
+  "required": ["attemptId", "examId", "timeTaken", "responses", "score"],
+  "properties": {
+    "attemptId": { "type": "string", "minLength": 1 },
+    "examId": { "type": "string", "minLength": 1 },
+    "timeTaken": { "type": "integer", "minimum": 0 },
+    "score": {
+      "type": "object",
+      "required": ["raw", "total", "percent"],
+      "properties": {
+        "raw": { "type": "integer", "minimum": 0 },
+        "total": { "type": "integer", "minimum": 0 },
+        "percent": { "type": "number", "minimum": 0, "maximum": 100 }
+      },
+      "additionalProperties": false
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["questionId", "section", "type", "isCorrect"],
+        "properties": {
+          "questionId": { "type": "string" },
+          "section": { "type": "string" },
+          "type": { "type": "string" },
+          "chosen": {},
+          "correct": {},
+          "isCorrect": { "type": "boolean" },
+          "timeSeconds": { "type": "integer", "minimum": 0 },
+          "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "incorrectBySection": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "incorrectByTag": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+        "incorrectByDifficulty": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

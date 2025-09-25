@@ -1,0 +1,10 @@
+{
+  "id": "exam-sample-001",
+  "title": "STEM Practice Exam (Sample from Shards)",
+  "timeLimit": 3600,
+  "sections": [
+    { "name": "Mathematics", "files": ["sections/math.page-1.json"] },
+    { "name": "Logical Reasoning", "files": ["sections/logic.page-1.json"] }
+  ]
+}
+

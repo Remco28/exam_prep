@@ -1,0 +1,12 @@
+[
+  {
+    "id": "l1",
+    "type": "true_false",
+    "text": "If all A are B and some B are C, then some A are C.",
+    "correctAnswer": false,
+    "explanation": "Syllogism does not guarantee overlap.",
+    "difficulty": "medium",
+    "tags": ["logic", "syllogisms"]
+  }
+]
+

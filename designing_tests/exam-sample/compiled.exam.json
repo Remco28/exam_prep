@@ -1,0 +1,60 @@
+{
+  "id": "exam-sample-001",
+  "title": "STEM Practice Exam (Sample from Shards)",
+  "timeLimit": 3600,
+  "sections": [
+    {
+      "name": "Mathematics",
+      "questions": [
+        {
+          "id": "m1",
+          "type": "multiple_choice",
+          "text": "Solve: 2x + 3 = 7",
+          "options": [
+            "x=1",
+            "x=2",
+            "x=3",
+            "x=4"
+          ],
+          "correctAnswer": "x=2",
+          "explanation": "Subtract 3, divide by 2.",
+          "difficulty": "easy",
+          "tags": [
+            "algebra",
+            "linear-equations"
+          ],
+          "diagramUrl": null
+        },
+        {
+          "id": "m2",
+          "type": "open_ended",
+          "text": "What is the area of a 3x4 rectangle?",
+          "correctAnswer": "12",
+          "explanation": "Area = length * width.",
+          "difficulty": "easy",
+          "tags": [
+            "geometry",
+            "area"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Logical Reasoning",
+      "questions": [
+        {
+          "id": "l1",
+          "type": "true_false",
+          "text": "If all A are B and some B are C, then some A are C.",
+          "correctAnswer": false,
+          "explanation": "Syllogism does not guarantee overlap.",
+          "difficulty": "medium",
+          "tags": [
+            "logic",
+            "syllogisms"
+          ]
+        }
+      ]
+    }
+  ]
+}
