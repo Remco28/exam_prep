@@ -1,0 +1,35 @@
+# Node / JavaScript
+node_modules/
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build artifacts
+dist/
+build/
+.cache/
+.tmp/
+.vite/
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+*.swp
+.direnv/
+
+# Project-specific (generated exam outputs)
+designing_tests/**/compiled.exam.json
+
