@@ -2,6 +2,23 @@
 
 This folder holds in-progress exam designs. Each exam is developed in its own subfolder and compiled to a single JSON file for use in the app.
 
+## Exam Structure
+- Two sections per exam:
+  - `Language Arts & Writing` — 55 questions built around a shared passage, vocabulary derived from that passage, targeted grammar/sentence revision items, and 20–25 logical reasoning prompts (analogies, sequences, deductions).
+  - `Mathematics` — 45 questions emphasizing middle-school algebra topics (linear equations, inequalities, proportional reasoning, coordinate plane analysis) plus arithmetic fundamentals and geometry/data interpretation.
+- Time limit: 2 hours (120 minutes). Aim for ~65 minutes of content pacing in Language Arts & Writing and ~55 minutes in Mathematics.
+- Scoring: 1 point per question; no deductions for incorrect or blank answers. Maintain a 30% easy / 40% medium / 30% hard mix across the whole exam.
+
+## Pagination & Shards
+- Structure shards around 8–12 questions each to support page-sized delivery (roughly 8 pages for Language Arts & Writing, 5 pages for Mathematics) while keeping passages and multi-part problems intact.
+- Balance shard totals so compiled exams maintain the 55/45 question split.
+- Include clear `instructions` on grammar prompts and reference passage-driven vocabulary explicitly in each question.
+- Attach metadata needed by the renderer within each shard:
+  - Passage data objects (`title`, `author`, `source`, full `body`) before the related questions.
+  - Skill tagging: `reading-comprehension`, `vocabulary`, `grammar`, `logical-reasoning` for Language Arts; algebra-focused tags (e.g., `linear-equations`, `inequalities`, `proportions`, `word-problems`, `data-interpretation`) for Mathematics.
+- Track question difficulty directly in shards so the compiled exam hits the 30/40/30 distribution. Adjust follow-up shards if one section skews too easy or too hard.
+- Incorporate diagrams, tables, or charts for roughly 10% of questions overall; provide concise alt text.
+
 ## Folder Convention
 - `designing_tests/exam-YYYYMMDD/` — one subfolder per exam in development.
   - Suggested contents:

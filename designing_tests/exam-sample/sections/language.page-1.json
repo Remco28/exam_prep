@@ -1,0 +1,129 @@
+[
+  {
+    "id": "law_01",
+    "type": "multiple_choice",
+    "text": "Read the passage below and answer the questions that follow.\n\nPASSAGE:\nIn 1895, engineer Emily Warren Roebling stood before a crowd to describe how the Brooklyn Bridge balanced innovation with safety. She detailed how thousands of steel wires were woven into flexible cables, allowing the bridge to sway without snapping. Roebling emphasized that every calculation considered wind, weight, and time, reminding listeners that engineering is the art of meeting human needs with scientific care.\n\nWhat primary idea does Roebling highlight in the passage?",
+    "options": [
+      "Engineers should prioritize artistic design over safety.",
+      "Engineering combines creativity with rigorous planning to serve people.",
+      "The Brooklyn Bridge relied on experimental materials that ultimately failed.",
+      "Wind patterns were ignored when the cables were first designed."
+    ],
+    "correctAnswer": "Engineering combines creativity with rigorous planning to serve people.",
+    "explanation": "Roebling underscores how calculations and innovation work together to satisfy human needs (last two sentences).",
+    "difficulty": "medium",
+    "tags": ["reading-comprehension", "stem-history"],
+    "passage": {
+      "title": "Balancing the Brooklyn Bridge",
+      "author": "Emily Warren Roebling",
+      "source": "Historic Lecture Transcript",
+      "body": "In 1895, engineer Emily Warren Roebling...scientific care.",
+      "lexile": 1020
+    },
+    "passageId": "passage-brooklyn"
+  },
+  {
+    "id": "law_02",
+    "type": "multiple_choice",
+    "text": "Which evidence from the passage best supports the claim that safety was central to the bridge's design?",
+    "options": [
+      "Roebling described how thousands of steel wires were woven into flexible cables.",
+      "Roebling spoke before a crowd in 1895.",
+      "The bridge balanced innovation with style.",
+      "Listeners were reminded that engineering is an art."
+    ],
+    "correctAnswer": "Roebling described how thousands of steel wires were woven into flexible cables.",
+    "explanation": "The detail about flexible cables shows deliberate planning to keep the bridge safe.",
+    "difficulty": "easy",
+    "tags": ["reading-comprehension", "text-evidence"],
+    "passageId": "passage-brooklyn"
+  },
+  {
+    "id": "law_03",
+    "type": "multiple_choice",
+    "text": "As used in the passage, the word \"woven\" most nearly means",
+    "options": [
+      "dressed",
+      "arranged",
+      "twisted",
+      "removed"
+    ],
+    "correctAnswer": "twisted",
+    "explanation": "In context, wires are woven by twisting them together into a cable.",
+    "difficulty": "medium",
+    "tags": ["vocabulary", "context-clues"],
+    "passageId": "passage-brooklyn"
+  },
+  {
+    "id": "law_04",
+    "type": "multiple_choice",
+    "text": "Which statement best expresses an inference about Roebling's view of engineering?",
+    "options": [
+      "Engineering is mainly about taking risks without calculations.",
+      "Engineering succeeds when imagination is paired with precise planning.",
+      "Engineering avoids human input in favor of automated tools.",
+      "Engineering decisions should be made only after projects are complete."
+    ],
+    "correctAnswer": "Engineering succeeds when imagination is paired with precise planning.",
+    "explanation": "She praises innovation but stresses careful calculations, indicating both are essential.",
+    "difficulty": "hard",
+    "tags": ["reading-comprehension", "inference"],
+    "passageId": "passage-brooklyn"
+  },
+  {
+    "id": "law_05",
+    "type": "multiple_choice",
+    "text": "Select the best revision of the sentence: 'The project engineer tested every cable, they reported the results in a log.'",
+    "options": [
+      "The project engineer tested every cable, reporting the results in a log.",
+      "The project engineer tested every cable they reported the results in a log.",
+      "The project engineer tested every cable and they report the results in a log.",
+      "Testing every cable. The project engineer reported the results in a log."
+    ],
+    "correctAnswer": "The project engineer tested every cable, reporting the results in a log.",
+    "explanation": "Combining with a participial phrase removes the comma splice while keeping meaning.",
+    "difficulty": "medium",
+    "tags": ["grammar", "sentence-revision"],
+    "instructions": "Choose the option that corrects the error without changing the sentence's meaning."
+  },
+  {
+    "id": "law_06",
+    "type": "multiple_choice",
+    "text": "Which word from the passage provides the best context clue for understanding \"sway\"?",
+    "options": [
+      "flexible",
+      "crowd",
+      "weight",
+      "listeners"
+    ],
+    "correctAnswer": "flexible",
+    "explanation": "Sway relates to the cables being flexible so they can move without breaking.",
+    "difficulty": "easy",
+    "tags": ["vocabulary", "context-clues"],
+    "passageId": "passage-brooklyn"
+  },
+  {
+    "id": "law_07",
+    "type": "multiple_choice",
+    "text": "Find the next pair in the analogy: BLUEPRINT : BUILDING :: ?",
+    "options": [
+      "Bridge : Cable",
+      "Equation : Solution",
+      "Hammer : Nail",
+      "Design : Engineer"
+    ],
+    "correctAnswer": "Equation : Solution",
+    "explanation": "A blueprint guides construction like an equation guides solving a problem.",
+    "difficulty": "medium",
+    "tags": ["logical-reasoning", "analogies"]
+  },
+  {
+    "id": "law_08",
+    "type": "true_false",
+    "text": "TRUE or FALSE: If every prototype satisfies the stress test and product Z is a prototype, then product Z satisfies the stress test.",
+    "correctAnswer": true,
+    "explanation": "The statement follows universal reasoning: product Z inherits the property.",
+    "difficulty": "hard",
+    "tags": ["logical-reasoning", "deduction"]
+  }
+]

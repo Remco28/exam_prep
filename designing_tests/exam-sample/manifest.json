@@ -1,10 +1,10 @@
 {
   "id": "exam-sample-001",
   "title": "STEM Practice Exam (Sample from Shards)",
-  "timeLimit": 3600,
+  "timeLimit": 7200,
+  "notes": "Sample manifest demonstrating Language Arts & Writing and Mathematics shards; question counts truncated for documentation purposes.",
   "sections": [
-    { "name": "Mathematics", "files": ["sections/math.page-1.json"] },
-    { "name": "Logical Reasoning", "files": ["sections/logic.page-1.json"] }
+    { "name": "Language Arts & Writing", "files": ["sections/language.page-1.json"] },
+    { "name": "Mathematics", "files": ["sections/mathematics.page-1.json"] }
   ]
 }
-

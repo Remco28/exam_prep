@@ -16,14 +16,28 @@ We author in small shards and compile to a single exam JSON.
 - Location: `designing_tests/<exam-name>/`
   - `manifest.json`: exam metadata + ordered list of shard files per section.
   - `sections/*.json`: shards; each file is an ARRAY of question objects.
-  - `compiled.exam.json`: generated output (do not hand‑edit).
+  - `compiled.exam.json`: generated output (do not hand-edit).
+
+Official exam structure to keep in mind while authoring:
+- Sections: `Language Arts & Writing` (55 questions) and `Mathematics` (45 questions).
+- Time limit: 2 hours (120 minutes) with suggested pacing of ~65 minutes for Language Arts & Writing and ~55 minutes for Mathematics.
+- Scoring: 1 point per question; no deductions for incorrect or blank answers.
+- Difficulty mix: target 30% easy, 40% medium, 30% hard. Track distribution as you add shards and rebalance if one section drifts.
 
 ### Shard Conventions
-- Size: keep each shard ~20–60 questions or <150 KB.
-- IDs: deterministic, readable (e.g., `m12`, `logic_05`). IDs must be unique within the exam.
-- Fields: include `difficulty` (`easy|medium|hard`) and `tags` (e.g., `algebra`, `fractions`) for reporting.
+- Size: keep each shard to 8–12 questions (and <150 KB) so pagination maps cleanly to app pages while keeping passages intact.
+- Balance: ensure the compiled exam maintains the 55/45 question split across the two sections.
+- IDs: deterministic, readable (e.g., `law_07`, `math_12`). IDs must be unique within the exam.
+- Fields: include `difficulty` (`easy|medium|hard`) and section-appropriate `tags` for analytics.
+- Tagging: Language Arts items should use `reading-comprehension`, `vocabulary`, `grammar`, `logical-reasoning` as applicable; Mathematics items should use algebra-focused tags such as `linear-equations`, `inequalities`, `proportions`, `word-problems`, `data-interpretation`.
 - Types: `multiple_choice`, `open_ended`, `diagram_based`, `true_false`, `matching`.
+- Types mix: keep ~80–90% multiple-choice for auto-grading, with remaining questions spread across supported formats. Use diagrams/tables in roughly 10% of questions and include `diagramUrl` or embed data structures.
 - Explanations: concise. If long, consider separate shards later (future enhancement).
+
+Scoring reminders:
+- Keep correct answers mapped 1:1 with the scoring model (1 point each, no penalty for incorrect responses).
+- Avoid designing logic that deducts or scales points; any advanced weighting should be discussed before implementation.
+- Ensure distractors encourage strategic guessing without ambiguity; note common misconceptions in `explanation` fields where helpful.
 
 ### AI Generation Prompts (Schema‑first)
 - Provide a narrow prompt per shard (one section/page at a time).

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "math_01",
+    "type": "multiple_choice",
+    "text": "Solve for x: 4x - 7 = 21",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7",
+    "explanation": "Add 7 to both sides to get 4x = 28, then divide by 4.",
+    "difficulty": "easy",
+    "tags": ["algebra", "linear-equations"]
+  },
+  {
+    "id": "math_02",
+    "type": "multiple_choice",
+    "text": "A robotics club budget is $360. If sensors cost $24 each, how many sensors can they purchase while saving $48 for batteries?",
+    "options": ["11", "12", "13", "14"],
+    "correctAnswer": "13",
+    "explanation": "Reserve $48 (360 - 48 = 312) and divide by $24 to get 13 sensors.",
+    "difficulty": "medium",
+    "tags": ["word-problems", "proportions"]
+  },
+  {
+    "id": "math_03",
+    "type": "multiple_choice",
+    "text": "The mean temperature over seven days is 68°F. If the first six days total 396°F, what is the seventh day's temperature?",
+    "options": ["70°F", "72°F", "80°F", "84°F"],
+    "correctAnswer": "80°F",
+    "explanation": "Total for seven days is 7 × 68 = 476. Subtract 396 to find 80°F.",
+    "difficulty": "medium",
+    "tags": ["data-interpretation", "averages"],
+    "data": {
+      "knownValues": {"mean": 68, "days": 7, "partialSum": 396}
+    }
+  },
+  {
+    "id": "math_04",
+    "type": "multiple_choice",
+    "text": "A rectangular solar panel measures 1.2 m by 0.8 m. What is its area?",
+    "options": ["0.96 m^2", "1.0 m^2", "1.92 m^2", "2.4 m^2"],
+    "correctAnswer": "0.96 m^2",
+    "explanation": "Multiply length by width: 1.2 × 0.8 = 0.96.",
+    "difficulty": "easy",
+    "tags": ["geometry", "area"]
+  },
+  {
+    "id": "math_05",
+    "type": "multiple_choice",
+    "text": "Solve the inequality: 3(x - 2) + 5 ≤ 2x + 9",
+    "options": ["x ≤ 4", "x ≤ 6", "x ≤ 10", "x ≤ 12"],
+    "correctAnswer": "x ≤ 10",
+    "explanation": "Simplify to 3x - 1 ≤ 2x + 9, then subtract 2x to obtain x - 1 ≤ 9, so x ≤ 10.",
+    "difficulty": "medium",
+    "tags": ["algebra", "inequalities"]
+  },
+  {
+    "id": "math_06",
+    "type": "multiple_choice",
+    "text": "A blueprint uses a scale of 1 cm to 2.5 m. If a hallway measures 7.2 cm on the blueprint, how long is the actual hallway?",
+    "options": ["12 m", "15 m", "18 m", "20 m"],
+    "correctAnswer": "18 m",
+    "explanation": "Multiply 7.2 by 2.5 to convert from centimeters on the blueprint to meters in real life.",
+    "difficulty": "hard",
+    "tags": ["proportions", "scale-models"]
+  },
+  {
+    "id": "math_07",
+    "type": "multiple_choice",
+    "text": "A function is defined by f(x) = 2x^2 - 3x + 4. What is f(-1)?",
+    "options": ["-1", "3", "7", "9"],
+    "correctAnswer": "9",
+    "explanation": "Substitute -1 to get 2(1) + 3 + 4 = 9.",
+    "difficulty": "medium",
+    "tags": ["algebra", "functions"]
+  },
+  {
+    "id": "math_08",
+    "type": "multiple_choice",
+    "text": "A box contains 5 red, 4 blue, and 3 green marbles. If one marble is drawn at random, what is the probability it is blue?",
+    "options": ["1/3", "1/4", "2/3", "4/11"],
+    "correctAnswer": "1/3",
+    "explanation": "There are 12 marbles total, so the probability of drawing a blue marble is 4/12 = 1/3.",
+    "difficulty": "hard",
+    "tags": ["probability", "fractions"]
+  }
+]

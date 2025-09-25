@@ -23,10 +23,11 @@ The app runs locally on the developer's machine (no remote deployment or server 
    - Navigation to practice exams, analytics, and review reports.
 
 2. **Practice Exams**:
-   - Timed simulations that mimic real exams (e.g., 2–3 hours; no calculator if applicable).
+   - Timed simulations that mimic the official exam (2 hours / 120 minutes; calculator optional).
    - Dynamic rendering: Load exam from JSON and display questions by type.
    - Pagination: Split long exams into navigable screens (e.g., 5–10 questions/page).
-   - Scoring: Auto-grade objective types; optional manual scoring for open-ended.
+   - Content coverage includes: reading comprehension passages with analysis prompts, vocabulary/definition questions tied to the passage, grammar and sentence revision items, logical reasoning puzzles, and middle-school algebra problem sets (linear equations, inequalities, proportional reasoning, word problems, geometry/data interpretation).
+   - Scoring: Auto-grade objective types; 1 point per question with no deductions for incorrect answers (difficulty balance of ~30% easy / 40% medium / 30% hard); optional manual scoring for open-ended.
    - Optional: Retake only incorrect questions from a prior attempt.
 
 3. **Post-Exam Review & Reporting**:
@@ -54,11 +55,15 @@ Support at least 5 formats, rendered dynamically based on a `type` field:
 5. **matching**: Two arrays (e.g., terms/definitions); UI: Drag-and-drop.
 
 Rendering is component-driven (per type) based on the JSON schema.
+- Target 80–90% multiple-choice items for auto-grading efficiency, with the remaining questions allocated across supported types to keep engagement high.
+
 
 ### 2.3 Exam Structure Overview
-- **Sections**: Math, Science, Logical Reasoning, Verbal/ELA, optional Writing.
-- **Format**: Mostly multiple-choice; timed; 100–300 questions total across sections.
-- **App Simulation**: Provide sample tests as separate JSON files.
+- **Sections**: Language Arts & Writing (55 questions) combining passage-driven comprehension, vocabulary, grammar, and 20–25 logical reasoning items; Mathematics (45 questions) balancing arithmetic/number sense, algebraic manipulation, and geometry/data interpretation.
+- **Format**: Mostly multiple-choice with limited true/false, matching, or auto-gradable short constructed responses; timed at 2 hours (7,200 seconds) totaling 100 questions.
+- **Difficulty Mix**: Target 30% easy, 40% medium, 30% hard questions overall to support growth with stretch goals.
+- **Scoring**: 1 point per question; no penalties for incorrect or blank answers.
+- **App Simulation**: Provide sample tests as separate JSON files adhering to the 55/45 distribution and recommended pagination (8–12 questions per page, keeping passages/multi-part problems intact).
 
 ## 3. Non-Functional Requirements
 ### 3.1 Performance
@@ -93,15 +98,36 @@ Rendering is component-driven (per type) based on the JSON schema.
     "timeLimit": 7200,
     "sections": [
       {
+        "name": "Language Arts & Writing",
+        "questions": [
+          {
+            "id": "law-1",
+            "type": "multiple_choice",
+            "text": "According to the passage, which factor most influenced the team's decision?",
+            "options": [
+              "Community feedback",
+              "Cost projections",
+              "A rival school's success",
+              "Student survey data"
+            ],
+            "correctAnswer": "Community feedback",
+            "explanation": "Paragraph four cites the team's decision as a direct response to neighborhood input.",
+            "difficulty": "medium",
+            "tags": ["reading-comprehension", "analysis"],
+            "passageId": "passage-1"
+          }
+        ]
+      },
+      {
         "name": "Mathematics",
         "questions": [
           {
-            "id": "q1",
+            "id": "math-1",
             "type": "multiple_choice",
             "text": "Solve: 2x + 3 = 7",
             "options": ["x=2", "x=3", "x=4", "x=5"],
             "correctAnswer": "x=2",
-            "explanation": "Subtract 3, divide by 2.",
+            "explanation": "Subtract 3 from both sides, then divide by 2.",
             "difficulty": "easy",
             "tags": ["algebra", "linear-equations"],
             "diagramUrl": null
@@ -119,10 +145,10 @@ Rendering is component-driven (per type) based on the JSON schema.
     "attemptId": "2025-01-01T12:00:00Z",
     "examId": "exam-001",
     "timeTaken": 6800,
-    "score": { "raw": 45, "total": 60, "percent": 75 },
+    "score": { "raw": 82, "total": 100, "percent": 82 },
     "responses": [
       {
-        "questionId": "q1",
+        "questionId": "math-1",
         "section": "Mathematics",
         "type": "multiple_choice",
         "chosen": "x=3",
