@@ -31,7 +31,7 @@ These updated guidelines align with the new specs while preserving realism and e
 #### 3. **Question Design and Variety**
    - **Types**: Stick to 5 (multiple choice dominant; others for engagement). Ensure app renders dynamically from JSON.
    - **Quality Standards**: Clear, age-appropriate (8th-grade level); explanations for all. Encourage guessing via no penalties—design distractors to teach common pitfalls.
-   - **Inclusivity/Engagement**: Diverse contexts (e.g., STEM innovators). Add diagrams for 10% (e.g., logic puzzles).
+   - **Engagement**: Use a variety of contexts (e.g., STEM innovators). Add diagrams for 10% (e.g., logic puzzles).
    - **Sourcing**: Adapt from samples; use AI for generation.
 
 #### 4. **General Best Practices**

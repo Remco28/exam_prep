@@ -6,6 +6,9 @@
 - [x] Clarify that any tutorials will cover test-taking strategy, not subject matter.
 - [x] Add reporting spec for missed questions and aggregates.
 - [ ] Draft "Exam Parameters" doc (time limits, sections, difficulty mix, scoring).
+- [ ] Start planning the technical implementation for the initial release.
+- [ ] Map the phases for the engineering work so we can stage delivery.
+- [ ] Kick off front-end design work covering the core exam flows.
 
 ## Future Enhancements
 - [ ] Author a concise "Exam Parameters" document for test creators (time limits, sections, counts, difficulty mix, scoring, pagination model).
@@ -17,6 +20,8 @@
 - [x] Add tools to compile shards and validate exams (`tools/`).
 - [ ] Implement ReviewReport UI and attempt persistence (per spec).
 - [ ] Add lazy-loading of large sections (if needed) via manifest/runtime.
+- [ ] Evaluate Figma integration via MCP for design handoff.
+- [ ] Ramp up on Figma to support the design process.
 
 ## Documentation
 - [x] Update `projectspec.md` to reflect the refined scope (practice exams only, strategy tutorials optional).

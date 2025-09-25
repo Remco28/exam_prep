@@ -18,8 +18,8 @@
 - Focus mix: 10–15 arithmetic/number-sense items (operations, fractions, percents), 10–15 algebraic manipulation and functions (linear equations, inequalities, systems, proportional reasoning), and 15–20 geometry/data interpretation problems (coordinate plane, area/volume, probability, charts).
 - Emphasize multi-step, context-driven word problems that highlight STEM applications; note when a multi-part stem covers multiple questions so pacing remains clear.
 - Majority multiple choice; reserve a handful of matching or open-ended responses where an auto-gradable format is feasible (e.g., numeric answer).
-- Encourage diagram inclusion for roughly 10% of questions (graphs, tables, figures) with accessible alt text.
-- Calculator policy: Optional; design problems solvable without a calculator to keep the experience equitable.
+- Encourage diagram inclusion for roughly 10% of questions (graphs, tables, figures) with alt text.
+- Calculator policy: Optional; design problems solvable without a calculator.
 
 ## Scoring and Pacing Guidance
 - Each correct answer earns 1 point; incorrect or blank responses earn 0 points with no penalty (reinforce strategic guessing in explanations and walkthroughs).
