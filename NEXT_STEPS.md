@@ -5,10 +5,14 @@
 - [x] Adjust spec to de-scope lesson plans; focus on practice exams only.
 - [x] Clarify that any tutorials will cover test-taking strategy, not subject matter.
 - [x] Add reporting spec for missed questions and aggregates.
-- [ ] Draft "Exam Parameters" doc (time limits, sections, difficulty mix, scoring).
-- [ ] Start planning the technical implementation for the initial release.
-- [ ] Map the phases for the engineering work so we can stage delivery.
-- [ ] Kick off front-end design work covering the core exam flows.
+- [x] Draft "Exam Parameters" doc (time limits, sections, difficulty mix, scoring).
+- [x] Finalize technical implementation decisions (tech stack, UI/UX, MVP scope).
+- [x] Map the phases for the engineering work (see `docs/IMPLEMENTATION_PLAN.md`).
+- [ ] Phase 1: Vue project setup with Vite, Bootstrap, and basic routing.
+- [ ] Phase 2: Build ExamViewer with pagination and question rendering.
+- [ ] Phase 3: Add timer, question navigator sidebar, and flagging.
+- [ ] Phase 4: Implement scoring engine and ScoreReport component.
+- [ ] Phase 5: Add localStorage persistence for attempts.
 
 ## Future Enhancements
 - [ ] Author a concise "Exam Parameters" document for test creators (time limits, sections, counts, difficulty mix, scoring, pagination model).

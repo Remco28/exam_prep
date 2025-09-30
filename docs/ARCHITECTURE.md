@@ -66,9 +66,43 @@ tools/compile_exam.mjs → compiled.exam.json → validate → load in app
 - Validate with `tools/validate_exam.mjs` and schemas in `schema/`.
 - Ensure questions include `difficulty`, `tags`, and concise `explanation` to power reporting.
 
+## Frontend Implementation Details
+
+### Tech Stack
+- **Framework**: Vue 3 with Vite build tool
+- **Language**: JavaScript (no TypeScript)
+- **UI Library**: Bootstrap 5 for components and styling
+- **State Management**: Pinia for exam state, attempt tracking, and history
+- **Routing**: Vue Router for navigation between views
+- **Storage**: Browser localStorage for attempt results and history
+
+### UI/UX Decisions
+- **Exam Presentation**: Paginated view (8-12 questions per page) with Next/Previous navigation
+- **Navigation Features**:
+  - Back navigation allowed (students can revise answers)
+  - Question flagging for review
+  - Sidebar question navigator for jumping directly to any question
+- **Reading Passages**: Remain visible while answering related questions (sticky or side-by-side layout)
+- **Timer**: Countdown from 120:00 with toggle to show/hide; auto-submit when time expires
+- **Question Types**: Multiple choice and true/false only for MVP (no open-ended questions)
+
+### MVP Scope
+- **Phase 1 Focus**: Take exam, view score with section breakdown
+- **Deferred Features**: Detailed review reports, analytics/progress tracking, question history
+- **Storage**: localStorage only (no file export in MVP)
+
+### Component Structure
+- `App.vue` — Root component with router-view
+- `ExamViewer.vue` — Main exam interface with pagination, timer, question navigator
+- `QuestionRenderer.vue` — Dynamic component for rendering question types
+- `ScoreReport.vue` — Post-exam score display with section breakdown
+- `QuestionNavigator.vue` — Sidebar for jumping to questions and viewing flags
+
 ## Related Docs
 - Spec: `projectspec.md`
+- Implementation plan: `docs/IMPLEMENTATION_PLAN.md`
 - Next steps: `NEXT_STEPS.md`
+- Exam parameters: `docs/exam_parameters.md`
 - Authoring: `designing_tests/README.md`
 - Schemas: `schema/exam.schema.json`, `schema/attempt.schema.json`
 - Contributing: `CONTRIBUTING.md`
